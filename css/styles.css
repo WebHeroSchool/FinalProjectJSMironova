@@ -9,6 +9,7 @@ body{
 .visible {
   display: none;
 }
+
 .main-content{
   width: 1440;
   height: 1024;
@@ -27,11 +28,11 @@ body{
   letter-spacing: -0.2px;
   padding-left: 108px;
   margin-top: 0px;
-  margin-bottom: 60px;
+  margin-bottom: 63px;
 }
 .menu__list{
   padding-left: 103px;
-  margin-bottom: 118px;
+  margin-bottom: 115px;
   list-style-type: none;
 }
 .menu__list__item{
@@ -46,9 +47,9 @@ body{
   color: #D62B2E;
 }
 .menu-list-romb {
-  background-image: url(/img/romb.svg);
+  background-image: url(../img/romb.svg);
   background-repeat: no-repeat;
-  background-position-y: 22px;
+  background-position-y: 15px;
 }
 .menu__button{
   background: #D62B2E;
@@ -56,11 +57,15 @@ body{
   height: 95px;
   border-radius: 8px;
   margin-left: 103px;
-}
-.menu__button__title{
   font-size: 32px;
   line-height: 37px;
-  padding: 29px 85px 28px 84px
+  color: #FFF;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+}
+button:focus {
+outline: none !important;
 }
 .menu-img__card-one{
   background-image: url(../img/card.png);
@@ -79,4 +84,53 @@ body{
   left: 74.17%;
   top: 53.52%;
   transform: rotate(39.26deg);
+}
+.game{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card{
+  width: 218px;
+  height: 341px;
+  background-image: url(../img/card.png);
+}
+.bagCard{
+  width: 218px;
+  height: 341px;
+  background-image: url(../img/bagcard.png);
+}
+.gameoverCard{
+  width: 218px;
+  height: 341px;
+  background-image: url(../img/gameovercard.png);
+}
+.gameoverCard,.bagCard:hover{
+  box-shadow: 15px 15px 15px rgba(0,0,0,0.5);
+  transform: translateY(-30px) rotateZ(-2deg);
+}
+.cardPage{
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-column-gap: 25px;
+  grid-row-gap: 1.7em;
+  top: 44%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.cardPageHard{
+  display: grid;
+  grid-template-columns: repeat(5, 2fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 1.3em;
+  top: 44%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.rotate{
+  transform: rotateY(180deg);
 }
