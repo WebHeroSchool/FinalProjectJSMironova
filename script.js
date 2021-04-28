@@ -26,11 +26,23 @@ function gameHardLevel() {
   medium.classList.remove('menu-list-romb');
   hard.classList.add('menu-list-romb');
 }
+function removeMenu(){
+  menu.classList.add('visible');
+}
+function clickCard(e){
+  ++numberClick;
+  if (numberClick %2 !== 0) {
+  random (e) ===0 ? e.currentTarget.classList.add('gameoverCard') : e.currentTarget.classList.add ('bagCard')
+  e.currentTarget.classList.remove ('Card');
+  } else {
+  window.location.reload();
+  }
+}
 function createCard() {
     for(let i = 0; i < level; i++) {
-      const card = document.createElement('div')
-            card.className = 'card'
-      if (level==10){
+      const card = document.createElement('div');
+            card.className = 'card';
+      if (level===10){
         const   arrayCard = document.getElementsByClassName('cardPageHard')[0];
                 arrayCard.classList.remove('cardPage');
                 arrayCard.appendChild(card);
@@ -41,7 +53,9 @@ function createCard() {
       }
       card.addEventListener('click', clickCard);
     }
-
+}
+function removeMenu(){
+  menu.classList.add('visible');
 }
 function clickButton(){
   removeMenu();
@@ -50,18 +64,6 @@ function clickButton(){
 function random() {
    return Math.round(Math.random());
  }
-function clickCard(e){
-  ++numberClick;
-  if (numberClick %2 !== 0) {
-  random (e) ===0 ? e.currentTarget.classList.add('gameoverCard') : e.currentTarget.classList.add ('bagCard')
-  e.currentTarget.classList.remove ('Card');
-  } else {
-  window.location.reload();
-  }
-}
-function removeMenu(){
-  menu.classList.add('visible');
-}
 gameEasyLevel();
 buttonGame.addEventListener('click',(e) => clickButton (e.target));
 easy.addEventListener('click',gameEasyLevel);
