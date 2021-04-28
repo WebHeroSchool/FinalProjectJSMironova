@@ -4,7 +4,7 @@ let target='';
 let easy = document.getElementById('simple-game');
 let medium = document.getElementById('medium-game');
 let hard = document.getElementById('hard-game');
-let buttonGame = document.getElementById('startGame')
+let buttonGame = document.getElementById('startGame');
 let mainGame=document.getElementById('game');
 let menu=document.getElementById('menu');
 let numberClick = 0;
@@ -47,6 +47,9 @@ function clickButton(){
   removeMenu();
   createCard();
 }
+function random() {
+   return Math.round(Math.random());
+ }
 function clickCard(e){
   ++numberClick;
   if (numberClick %2 !== 0) {
@@ -56,14 +59,11 @@ function clickCard(e){
   window.location.reload();
   }
 }
-function random() {
-   return Math.round(Math.random());
- }
 function removeMenu(){
   menu.classList.add('visible');
 }
 gameEasyLevel();
-buttonGame.addEventListener('click',e => clickButton (e.target));
+buttonGame.addEventListener('click',(e) => clickButton (e.target));
 easy.addEventListener('click',gameEasyLevel);
 medium.addEventListener('click',gameMediumLevel);
 hard.addEventListener('click',gameHardLevel);
