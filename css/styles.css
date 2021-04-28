@@ -68,7 +68,8 @@ button:focus {
 outline: none !important;
 }
 .menu-img__card-one{
-  background-image: url(../img/card.png);
+  background: no-repeat url(../img/card.png);
+  background-size: 100%;
   Width:218px;
   Height:341px;
   position: absolute;
@@ -77,7 +78,8 @@ outline: none !important;
   transform: rotate(11.9deg);
 }
 .menu-img__card-two{
-  background-image: url(../img/card.png);
+  background: no-repeat url(../img/card.png);
+  background-size: 100%;
   Width:218px;
   Height:341px;
   position: absolute;
@@ -93,17 +95,20 @@ outline: none !important;
 .card{
   width: 218px;
   height: 341px;
-  background-image: url(../img/card.png);
+  background: no-repeat url(../img/card.png);
+  background-size: 100%;
 }
 .bagCard{
   width: 218px;
   height: 341px;
-  background-image: url(../img/bagcard.png);
+  background: no-repeat url(../img/bagcard.png);
+  background-size: 100%;
 }
 .gameoverCard{
   width: 218px;
   height: 341px;
-  background-image: url(../img/gameovercard.png);
+  background: no-repeat url(../img/gameovercard.png);
+  background-size: 100%;
 }
 .gameoverCard,.bagCard:hover{
   box-shadow: 15px 15px 15px rgba(0,0,0,0.5);
@@ -114,7 +119,7 @@ outline: none !important;
   grid-template-columns: repeat(3, 2fr);
   grid-column-gap: 25px;
   grid-row-gap: 1.7em;
-  top: 44%;
+  top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -125,7 +130,7 @@ outline: none !important;
   grid-template-columns: repeat(5, 2fr);
   grid-column-gap: 24px;
   grid-row-gap: 1.3em;
-  top: 44%;
+  top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -133,4 +138,110 @@ outline: none !important;
 }
 .rotate{
   transform: rotateY(180deg);
+}
+@media (max-width: 1213px) {
+  .card,.bagCard,.gameoverCard, .menu-img__card-two,.menu-img__card-one{
+    width: 168px;
+    height: 265px;
+  }
+  .menu__button{
+    width: 252px;
+    height: 75px;
+    font-size: 27px;
+    margin-left: 35px;
+  }
+  .menu__list__item{
+    font-size: 40px;
+    line-height: 49px;
+  }
+  .menu__list{
+    margin-bottom: 65px;
+    padding-left: 35px;
+  }
+  .menu__title{
+    font-size: 47px;
+    line-height: 57px;
+    padding-left: 35px;
+  }
+  .menu__description{
+    font-size: 15px;
+    line-height: 18px;
+    padding-left: 35px;
+  }
+}
+@media (max-width: 1000px) {
+  .card, .bagCard, .gameoverCard{
+    width: 138px;
+    height: 215px;
+  }
+  .cardPageHard{
+    grid-column-gap: 14px;
+    grid-row-gap: 0.9em;
+  }
+}
+@media (max-width: 780px) {
+  .cardPageHard{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 70%;
+  }
+  .card{
+    margin: auto;
+  }
+}
+@media (max-width: 660px) {
+  .card,.bagCard,.gameoverCard, .menu-img__card-two,.menu-img__card-one{
+    width: 108px;
+    height: 170px;
+  }
+  .menu__title{
+    font-size: 30px;
+    line-height: 57px;
+    padding-left: 35px;
+    margin-top: 50px;
+  }
+  .menu__list__item{
+    font-size: 30px;
+    margin-bottom: 0px;
+  }
+  .menu__button{
+    width: 152px;
+    height: 65px;
+    font-size: 14px;
+    margin-left: 35px;
+  }
+  .menu__list{
+    margin-bottom: 35px;
+  }
+}
+@media (max-width:500px) {
+  .card,.bagCard,.gameoverCard, .menu-img__card-two,.menu-img__card-one{
+    width: 85px;
+    height: 135px;
+  }
+}
+@media (max-width:406px) {
+  .card,.bagCard,.gameoverCard{
+    width: 60px;
+    height: 95px;
+  }
+  .menu-img__card-two,.menu-img__card-one{
+    display: none;
+  }
+  .menu__title{
+    font-size: 25px;
+    line-height: 27px;
+    padding-left: 35px;
+    margin-top: 50px;
+  }
+  .menu__button{
+    width: 152px;
+    height: 65px;
+    font-size: 14px;
+    margin-left:75px;
+  }
+  .menu__description{
+    margin-bottom: 15px;
+  }
 }
