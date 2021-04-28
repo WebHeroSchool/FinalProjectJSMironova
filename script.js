@@ -32,7 +32,7 @@ function removeMenu(){
 function clickCard(e){
   ++numberClick;
   if (numberClick %2 !== 0) {
-  random (e) ===0 ? e.currentTarget.classList.add('gameoverCard') : e.currentTarget.classList.add ('bagCard')
+  random (e) ===0 ? e.currentTarget.classList.add('gameoverCard') : e.currentTarget.classList.add ('bagCard');
   e.currentTarget.classList.remove ('Card');
   } else {
   window.location.reload();

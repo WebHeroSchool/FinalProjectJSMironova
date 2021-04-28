@@ -139,7 +139,7 @@ outline: none !important;
   transform: rotateY(180deg);
 }
 @media (max-width: 1213px) {
-  .card,.bagCard,.gameoverCard, .menu-img__card-two,.menu-img__card-one{
+  .card , .bagCard , .gameoverCard , .menu-img__card-two , .menu-img__card-one {
     width: 168px;
     height: 265px;
   }
