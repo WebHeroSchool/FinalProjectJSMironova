@@ -1,19 +1,22 @@
 body {
   background-image: url(../img/background.png);
-  color: #FFF;
+  color: #ffffff;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   margin: 0;
 }
+
 .visible {
   display: none;
 }
+
 .main-content {
   width: 1440;
   height: 1024;
   margin: 0 auto;
 }
+
 .menu__title {
   font-size: 57px;
   line-height: 67px;
@@ -21,6 +24,7 @@ body {
   margin-bottom: 8px;
   margin-top: 125px;
 }
+
 .menu__description {
   font-size: 19px;
   line-height: 22px;
@@ -29,11 +33,13 @@ body {
   margin-top: 0px;
   margin-bottom: 63px;
 }
+
 .menu__list {
   padding-left: 103px;
   margin-bottom: 115px;
   list-style-type: none;
 }
+
 .menu__list__item {
   font-size: 50px;
   line-height: 59px;
@@ -42,77 +48,89 @@ body {
   cursor: pointer;
   transition: color 0.6s;
 }
+
 .menu-list__item:hover {
-  color: #D62B2E;
+  color: #d62b2e;
 }
+
 .menu-list-romb {
   background-image: url(../img/romb.svg);
   background-repeat: no-repeat;
   background-position-y: 15px;
 }
+
 .menu__button {
-  background: #D62B2E;
+  background: #d62b2e;
   width: 352px;
   height: 95px;
   border-radius: 8px;
   margin-left: 103px;
   font-size: 32px;
   line-height: 37px;
-  color: #FFF;
+  color: #ffffff;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
 }
+
 button:focus {
-outline: none !important;
+  outline: none !important;
 }
+
 .menu-img__card-one {
   background: no-repeat url(../img/card.png);
   background-size: 100%;
-  Width:218px;
-  Height:341px;
+  Width: 218px;
+  Height: 341px;
   position: absolute;
   left: 61.67%;
   top: 51.76vh;
   transform: rotate(11.9deg);
 }
+
 .menu-img__card-two {
   background: no-repeat url(../img/card.png);
   background-size: 100%;
-  Width:218px;
-  Height:341px;
+  Width: 218px;
+  Height: 341px;
   position: absolute;
   left: 74.17%;
   top: 53.52%;
   transform: rotate(39.26deg);
 }
+
 .game {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
 }
+
 .card {
   width: 218px;
   height: 341px;
   background: no-repeat url(../img/card.png);
   background-size: 100%;
 }
+
 .bagCard {
   width: 218px;
   height: 341px;
   background: no-repeat url(../img/bagcard.png);
   background-size: 100%;
 }
+
 .gameoverCard {
   width: 218px;
   height: 341px;
   background: no-repeat url(../img/gameovercard.png);
   background-size: 100%;
 }
-.gameoverCard,.bagCard:hover {
-  box-shadow: 15px 15px 15px rgba(0,0,0,0.5);
+
+.gameoverCard, .bagCard:hover {
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
   transform: translateY(-30px) rotateZ(-2deg);
 }
+
 .cardPage {
   display: grid;
   grid-template-columns: repeat(3, 2fr);
@@ -124,6 +142,7 @@ outline: none !important;
   transform: translate(-50%, -50%);
   position: absolute;
 }
+
 .cardPageHard {
   display: grid;
   grid-template-columns: repeat(5, 2fr);
@@ -135,111 +154,133 @@ outline: none !important;
   transform: translate(-50%, -50%);
   position: absolute;
 }
+
 .rotate {
   transform: rotateY(180deg);
 }
+
 @media (max-width: 1213px) {
-  .card , .bagCard , .gameoverCard , .menu-img__card-two , .menu-img__card-one {
+  .card, .bagCard, .gameoverCard, .menu-img__card-two, .menu-img__card-one {
     width: 168px;
     height: 265px;
   }
+
   .menu__button {
     width: 252px;
     height: 75px;
     font-size: 27px;
     margin-left: 35px;
   }
+
   .menu__list__item {
     font-size: 40px;
     line-height: 49px;
   }
+
   .menu__list {
     margin-bottom: 65px;
     padding-left: 35px;
   }
+
   .menu__title {
     font-size: 47px;
     line-height: 57px;
     padding-left: 35px;
   }
+
   .menu__description {
     font-size: 15px;
     line-height: 18px;
     padding-left: 35px;
   }
 }
+
 @media (max-width: 1000px) {
   .card, .bagCard, .gameoverCard {
     width: 138px;
     height: 215px;
   }
+
   .cardPageHard {
     grid-column-gap: 14px;
     grid-row-gap: 0.9em;
   }
 }
+
 @media (max-width: 780px) {
-  .cardPageHard{
+  .cardPageHard {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     width: 70%;
   }
+
   .card {
     margin: auto;
   }
 }
+
 @media (max-width: 660px) {
-  .card,.bagCard,.gameoverCard, .menu-img__card-two,.menu-img__card-one{
+  .card, .bagCard, .gameoverCard, .menu-img__card-two, .menu-img__card-one {
     width: 108px;
     height: 170px;
   }
+
   .menu__title {
     font-size: 30px;
     line-height: 57px;
     padding-left: 35px;
     margin-top: 50px;
   }
+
   .menu__list__item {
     font-size: 30px;
     margin-bottom: 0px;
   }
+
   .menu__button {
     width: 152px;
     height: 65px;
     font-size: 14px;
     margin-left: 35px;
   }
+
   .menu__list {
     margin-bottom: 35px;
   }
 }
+
 @media (max-width:500px) {
-  .card,.bagCard,.gameoverCard, .menu-img__card-two,.menu-img__card-one{
+  .card, .bagCard, .gameoverCard, .menu-img__card-two, .menu-img__card-one {
     width: 85px;
     height: 135px;
   }
 }
+
 @media (max-width:406px) {
-  .card,.bagCard,.gameoverCard {
+  .card, .bagCard, .gameoverCard {
     width: 60px;
     height: 95px;
   }
-  .menu-img__card-two,.menu-img__card-one {
+
+  .menu-img__card-two, .menu-img__card-one {
     display: none;
   }
+
   .menu__title {
     font-size: 25px;
     line-height: 27px;
     padding-left: 35px;
     margin-top: 50px;
   }
+
   .menu__button {
     width: 152px;
     height: 65px;
     font-size: 14px;
-    margin-left:75px;
+    margin-left: 75px;
   }
+
   .menu__description {
     margin-bottom: 15px;
   }
