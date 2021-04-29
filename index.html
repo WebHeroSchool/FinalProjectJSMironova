@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>CardGame</title>
+  </head>
+  <body>
+    <main class="main-content" id="main">
+      <section class="menu" id="menu">
+        <h1 class="menu__title">Выберите уровень сложности:</h1>
+        <h2 class="menu__description">Выберите сложность и игра начнется. Чем выше уровень - тем больше будет выборка карт. </h2>
+        <ul class="menu__list">
+          <li class="menu__list__item" id="simple-game">Простой</li>
+          <li class="menu__list__item" id="medium-game">Средний</li>
+          <li class="menu__list__item" id="hard-game">Сложный</li>
+        </ul>
+      <button class="menu__button" id="startGame">Начать игру</button>
+      <div class="menu-img">
+        <div class="menu-img__card-one"></div>
+        <div class="menu-img__card-two"></div>
+      </div>
+    </section>
+  </main>
+  <div class="game">
+    <div class="cardPage cardPageHard" id="cardPage">
+
+    </div>
+  </div>
+    <script src="script.js"></script>
+  </body>
+</html>
